@@ -1,0 +1,22 @@
+.nav__container {
+    padding: 0 20px;
+    text-align:right;
+
+    h5 {
+        margin-top: 35px;
+        font-size: 16px;
+    }
+}
+
+.nav__main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__title {
+    font-size: 18px;    
+}
+
+.nav__create {
+    color: $selected;
+}

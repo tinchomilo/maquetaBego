@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { Navbar } from "./components/Navbar";
+import { Statistics } from "./components/Statistics";
+import { Tasks } from "./components/Tasks";
+
 
 function App() {
+
+  const [orders, setOrders] = useState([
+    { id: 123455, order: '#890PO90', name: 'Bryan Williams', img: 'imgprogres', date: '1 day left'}, 
+    { id: 123456, order: '#890PO90', name: 'Marcus Klaus', img: 'imgProgres', date: '3 days left'},
+    { id: 123457, order: '#890PO90', name: 'Peter Parker', img: 'imgProgres', date: '3 days left'},
+    { id: 123458, order: '#890PO90', name: 'Clark Kent', img: 'imgProgres', date: '3 days left'},
+    { id: 123459, order: '#890PO90', name: 'Tony Stark', img: 'imgProgres', date: '3 days left'}
+  ])
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app__main">
+      
+      <Navbar />
+
+      <Tasks orders={orders}/>
+
+      <Statistics />
+      {/* <h1 className="app__main">app de bego, Es el challenge</h1> */}
+
+      
     </div>
   );
 }

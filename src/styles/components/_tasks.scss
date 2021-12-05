@@ -1,0 +1,105 @@
+.tasks__container{
+    margin-top:30px;
+    padding-left: 8px;
+    width: 100%;
+}
+
+.tasks__main-opions {
+    display: flex;
+    font-size: 14px;
+    justify-content: space-around;
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%;
+
+    li:first-child {
+        color: $selected;
+        text-decoration: underline;
+        text-underline-position: under;
+    }
+}
+
+.tasks__container-upcoming {
+    font-size: 14px;
+    margin-left: 15px;
+    margin-top: 40px;
+
+    span {
+        color: $secundary;
+        margin-left: 10px;
+    }
+}
+
+.tasks__container-upcoming-tasks {
+    display: flex;
+    margin-top: 10px;
+    overflow: auto;
+    padding: 10px;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.tasks__upcoming-graph {
+    background-color: $background-light;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;    
+    height: 106px;
+    margin-right: 19px;
+    min-width: 171px;
+    padding: 5px 20px;
+
+    -webkit-box-shadow: inset -2px -2px 4px 0px #040B11, inset 2px 2px 4px 0px #1C232A, 0px 13px 9px 0px #000000; 
+    box-shadow: inset -2px -2px 4px 0px #040B11, inset 2px 2px 4px 0px #1C232A, 0px 13px 9px 0px #000000;
+
+    h5 {
+        font-size: 14px;
+        padding: 12px 0 0 0;
+    }
+
+    span {
+        color: $secundary;
+        font-size: 12px;
+    }
+}
+
+.tasks__upcoming-graph-dates {
+    align-self: flex-end;
+    color: $secundary;
+    font-size: 10px;
+    margin-right: 5px;
+    margin-top: 4px;
+}
+
+.tasks__upcoming-progress {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    margin-top: 13px;
+
+    span:first-child {
+        font-size: 12px ;
+    }
+    span:nth-child(2) {
+        font-size: 10px;
+    }
+}
+
+.tasks__progress {
+    background-color: rgb(70, 69, 69);
+    border-radius: 15px;
+    margin-top: 15px;
+    margin: 0;
+    position: relative;   
+    width: 136px;   
+}
+   
+.tasks__bar {
+    background-color: $selected;
+    border-radius: 20px;
+    box-shadow: 0 2px 15px 0 #040B11;
+    height: 5px;
+    padding: 0 10px;
+    width: 30px;
+}
