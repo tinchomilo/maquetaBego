@@ -151,7 +151,7 @@ export const Statistics = () => {
                     <div className="statistics__graph-main-img">
                         <div className="statistics__graph-main-img-details" ></div>
                         <hr width="1" size="115"/>
-                        <img src={ graph } width="311" alt="graph img"/>
+                        <img src={ graph } width="323" alt="graph img"/>
                     </div>
                 </div>
                 <div className="statistics__graph-months">
