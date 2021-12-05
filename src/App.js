@@ -23,8 +23,6 @@ function App() {
       <Tasks orders={orders}/>
 
       <Statistics />
-      {/* <h1 className="app__main">app de bego, Es el challenge</h1> */}
-
       
     </div>
   );
