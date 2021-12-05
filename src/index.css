@@ -1,12 +1,24 @@
 @font-face {
-    font-family: 'AvenirBook';
-    src: local('AvenirBook'),
-         url('AvenirBook-webfont.eot?#iefix') format('embedded-opentype'),
-         url('AvenirBook-webfont.woff') format('woff'),
-         url('AvenirBook-webfont.ttf') format('truetype'),
-         url('AvenirBook-webfont.svg#icomoonregular') format('svg');
+    font-family: 'Avenir';
+    src: local('Avenir Book'), local('Avenir-Book'),
+        url('/src//assets/fonts/AvenirBook/Avenir-Book.ttf') format('woff2'),
+        url('/src/assets/fonts/AvenirBook/Avenir-Book.woff') format('woff'),
+        url('/src/assets/fonts/AvenirBook/Avenir-Book.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-    font-strecht: condensed;
-    unicode-range: "U+0-10FFFF";
-}
+  }
+
+  @font-face {
+      font-family: 'Avenir Heavy';
+      src: url('/src/assets/fonts/avenir-heavy.otf');
+  }
+
+  @font-face {
+      font-family: 'SFNS Display Regular';
+      src: url('/src/assets/fonts/SFNS\ Display\ Regular.ttf');
+  }
+
+  @font-face {
+      font-family: 'SFNS Display Regular';
+      src: url('/src/assets/fonts/SFNS\ Display\ Regular.ttf');
+  }

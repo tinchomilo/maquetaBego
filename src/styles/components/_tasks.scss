@@ -6,6 +6,7 @@
 
 .tasks__main-opions {
     display: flex;
+    font-family: 'Avenir Heavy';
     font-size: 14px;
     justify-content: space-around;
     margin-left: 0;
@@ -20,18 +21,21 @@
 }
 
 .tasks__container-upcoming {
+    font-family: 'Avenir Heavy';
     font-size: 14px;
     margin-left: 15px;
     margin-top: 40px;
 
     span {
         color: $secundary;
+        font-family: 'Avenir';
         margin-left: 10px;
     }
 }
 
 .tasks__container-upcoming-tasks {
     display: flex;
+    height: 140px;
     margin-top: 10px;
     overflow: auto;
     padding: 10px;
@@ -47,18 +51,19 @@
     height: 106px;
     margin-right: 19px;
     min-width: 171px;
-    padding: 5px 20px;
+    padding: 0px 20px;
 
-    -webkit-box-shadow: inset -2px -2px 4px 0px #040B11, inset 2px 2px 4px 0px #1C232A, 0px 13px 9px 0px #000000; 
     box-shadow: inset -2px -2px 4px 0px #040B11, inset 2px 2px 4px 0px #1C232A, 0px 13px 9px 0px #000000;
 
     h5 {
+        font-family: 'Avenir Heavy';
         font-size: 14px;
         padding: 12px 0 0 0;
     }
 
     span {
         color: $secundary;
+        font-family: 'Avenir';
         font-size: 12px;
     }
 }
@@ -66,6 +71,7 @@
 .tasks__upcoming-graph-dates {
     align-self: flex-end;
     color: $secundary;
+    font-family: 'Avenir';
     font-size: 10px;
     margin-right: 5px;
     margin-top: 4px;
@@ -74,6 +80,7 @@
 .tasks__upcoming-progress {
     align-items: center;
     display: flex;
+    font-family: 'Avenir';
     justify-content: space-between;
     margin-bottom: 5px;
     margin-top: 13px;
@@ -102,4 +109,73 @@
     height: 5px;
     padding: 0 10px;
     width: 30px;
+}
+
+
+@media (min-width: 720px) {
+    .tasks__main-opions {
+        font-size: 24px;
+    }
+
+    .tasks__container-upcoming {
+        font-size: 24px;
+    }
+
+    .tasks__container-upcoming-tasks {
+        display: flex;
+        height: 210px;
+    }
+
+    .tasks__upcoming-graph {
+        border-radius: 12px;
+        height: 159px;
+        min-width: 256px;
+        padding: 5px 20px;
+           
+        box-shadow: inset -3px -3px 6px 0px #040B11, inset 3px 3px 6px 0px #1C232A, 0px 19px 13px 0px #000000;
+
+    
+        h5 {
+            font-family: 'Avenir Heavy';
+            font-size: 21px;
+        }
+    
+        span {
+            font-family: 'Avenir';
+            font-size: 18px;
+        }
+    }
+
+    .tasks__upcoming-progress {
+       
+        span:first-child {
+            font-size: 18px ;
+        }
+        span:nth-child(2) {
+            font-size: 15px;
+        }
+    }
+
+    .tasks__upcoming-graph-dates {
+        // align-self: flex-end;
+        // color: $secundary;
+        // font-family: 'Avenir';
+        font-size: 15px;
+        margin-right: 7px;
+        margin-top: 6px;
+    }
+
+    .tasks__progress {
+        border-radius: 22px;
+        margin-top: 22px;
+        margin: 0;        
+        width: 214px;   
+    }
+       
+    .tasks__bar {
+        background-color: $selected;
+        border-radius: 30px;
+        height: 7px;
+        width: 45px;
+    }
 }

@@ -9,7 +9,7 @@ export const Statistics = () => {
                 <h4>Statistics</h4>
                 <div className="statistics__save">
                     <div className="statistics__save-arrow">
-                        <svg width="34px" height="33px" viewBox="0 0 34 33" version="1.1" xmlns="http://www.w3.org/2000/svg"> 
+                        <svg id="statistics__save-arrow-svg-1" width="34px" height="33px" viewBox="0 0 34 33" version="1.1" xmlns="http://www.w3.org/2000/svg"> 
                             <defs>
                                 <filter x="-96.4%" y="-103.8%" width="292.9%" height="307.7%" filterUnits="objectBoundingBox" id="filter-1">
                                     <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
@@ -113,7 +113,7 @@ export const Statistics = () => {
                             </g>
                         </g>
                     </svg>
-                    <div className="statistics__detail-item-3-title">
+                    <div className="statistics__detail-item-4-title">
                         <span>10</span>
                         <span>In Progress</span>
                     </div>
@@ -133,7 +133,7 @@ export const Statistics = () => {
                             </g>
                         </g>
                     </svg>
-                    <div className="statistics__detail-item-4-title">
+                    <div className="statistics__detail-item-3-title">
                         <span>2</span>
                         <span>Delayed</span>
                     </div>
@@ -149,8 +149,8 @@ export const Statistics = () => {
                 <div className="statistics__graph-main">                    
                     <span><sup>$ </sup>13,543</span>
                     <div className="statistics__graph-main-img">
-                        <div style={{position:'absolute', backgroundColor:'white', width: 10, height:10, left:221, top:2, borderRadius:50}}></div>
-                        <hr width="1" size="115" style={{position:'absolute', left:225, top:5, opacity:0.2}} />
+                        <div className="statistics__graph-main-img-details" ></div>
+                        <hr width="1" size="115"/>
                         <img src={ graph } width="311" />
                     </div>
                 </div>
@@ -159,7 +159,7 @@ export const Statistics = () => {
                     <span>Jul</span>
                     <span>Aug</span>
                     <span>Sep</span>
-                    <span style={{color:'white'}}>Oct</span>
+                    <span>Oct</span>
                     <span>Nov</span>
                 </div>
             </div>

@@ -1,7 +1,12 @@
 // @font-face {
-//     font-family: "Avenir Book";
-//     src: url("/fonts/AvenirBook.ttf") format("truetype");
-// }
+//     font-family: 'Avenir';
+//     src: local('Avenir Book'), local('Avenir-Book'),
+//         url('/src//assets/fonts/AvenirBook/Avenir-Book.ttf') format('woff2'),
+//         url('/src/assets/fonts/AvenirBook/Avenir-Book.woff') format('woff'),
+//         url('/src/assets/fonts/AvenirBook/Avenir-Book.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+//   }
 
 
 

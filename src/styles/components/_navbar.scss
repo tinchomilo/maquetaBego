@@ -14,9 +14,44 @@
 }
 
 .nav__title {
+    font-family: 'Avenir Heavy';
     font-size: 18px;    
 }
 
 .nav__create {
     color: $selected;
+    font-family: 'Avenir Heavy';
+}
+
+
+@media ( min-width: 720px) {
+    .nav__container {
+        padding: 0 30px;
+        text-align:right;
+    
+        h5 {
+            font-size: 26px;
+            margin-top: 45px;
+        }
+    }
+
+    .nav__title {
+        font-family: 'Avenir Heavy';
+        font-size: 28px;    
+    }
+
+    .nav__main {
+        display: flex;
+        justify-content: space-between;
+        
+        svg:first-child {
+            height: 30px;
+            width: 18px;
+        }
+    }
+    
+    .nav__title-svg-2 {
+        height: 36px;
+        width: 33px;
+    }
 }

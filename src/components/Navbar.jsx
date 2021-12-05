@@ -17,7 +17,7 @@ export const Navbar = () => {
                     </g>
                 </svg>
                 <h4 className="nav__title">Tasks</h4>
-                <svg width="22px" height="24px" viewBox="0 0 22 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <svg className="nav__title-svg-2" width="22px" height="24px" viewBox="0 0 22 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
                     <title>F8225DED-EB11-4AFC-9256-204193DBCCA8</title>
                     <defs>
                         <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
